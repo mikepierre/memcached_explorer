@@ -1,1 +1,3 @@
-end_point: ""
+end_point:
+- {"server":"host", "port":"port number"}
+#- {"server":"1", "port":"2"} <- Copy this to add more servers YAML ARRAY
