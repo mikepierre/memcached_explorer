@@ -35,9 +35,33 @@ class MemcachedService
     /**
      * @return array
      */
+    public function getVersions()
+    {
+        $this->connection;
+        return $this->object->getVersion();
+    }
+
+    /**
+     * @return array
+     */
     public function getServerList()
     {
         $this->connection;
         return $this->object->getServerList();
     }
+
+    /**
+     * @param array $data
+     * @return bool
+     */
+    public function add(array $data)
+    {
+        $this->connection;
+        if($this->object->set($data['key'], $data['value']) == 1) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+
 }

@@ -1,4 +1,8 @@
-memcached_explorer
+Memcached Explorer
 ==================
 
-A Symfony project created on January 27, 2018, 10:05 pm.
+This project is dedicated on visualizing the statistics from your 
+Memcached servers.
+ 
+ 
+This project was build using The Symfony 3 Framework.
