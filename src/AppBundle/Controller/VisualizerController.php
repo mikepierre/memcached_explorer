@@ -21,7 +21,6 @@ class VisualizerController extends Controller
      */
     public function indexAction()
     {
-
     }
 
     public function addkeyAction()
