@@ -24,6 +24,8 @@ class MemcachedService
     }
 
     /**
+     * Get the Status of a Memcached Server.
+     *
      * @return array
      */
     public function getMetrics()

@@ -21,6 +21,9 @@ class VisualizerController extends Controller
      */
     public function indexAction()
     {
+        $data = [];
+        return $this->render('site/index.html.twig');
+
     }
 
     public function addkeyAction()
