@@ -22,11 +22,19 @@ class VisualizerController extends Controller
     public function indexAction()
     {
         $data = [];
-        return $this->render('site/index.html.twig');
+
+        $config = __DIR__.'/../../../app/config/memcached.yml';
+        $file = file_get_contents($config,true);
+        $parsed_yaml = Yaml::parse($file);
+
+        $MemcachedService = new MemcachedService($parsed_yaml);
+        print_r($MemcachedService->getMetrics());
+
+        return $this->render('site/index.html.twig',$data);
 
     }
 
-    public function addkeyAction()
+    public function addAction()
     {
 
     }
